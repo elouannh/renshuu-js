@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/index.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/modules/client.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/classes/client.Client.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/modules/error_manager.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/enums/error_manager.END_CODE.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.errCode.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/variables/error_manager.errors.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.errString.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.exit.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/enums/error_manager.EXIT_CODE.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.log.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.success.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/404.html</loc>
-		<lastmod>2024-10-05T13:44:45.684Z</lastmod>
+		<lastmod>2024-10-05T13:44:52.164Z</lastmod>
 	</url>
 </urlset>
