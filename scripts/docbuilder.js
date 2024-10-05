@@ -20,9 +20,9 @@ async function main() {
         exclude: ["src/index.ts", "src/*/index.ts", "src/tests"],
         sort: ["alphabetical"],
         page404Content: "This page does not exist. What are you looking for?",
-        hostedBaseUrl: "https://aisu.elouannhosta.com",
+        hostedBaseUrl: "https://renshuu-js.elouannhosta.com",
         useHostedBaseUrlForAbsoluteLinks: true,
-        name: "Aisu Framework",
+        name: "Renshuu.js",
         gitRevision: "branch/main",
         cleanOutputDir: true,
     });
