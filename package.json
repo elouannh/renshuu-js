@@ -1,0 +1,71 @@
+{
+  "name": "renshuu-js",
+  "version": "0.0.0",
+  "description": "Get your Renshuu statistics and manage your schedules with this powerful NPM package. Interact with the Renshuu API and integrate your data anywhere. ",
+  "keywords": [
+    "api", "npm", "package", "japanese", "renshuu"
+  ],
+  "homepage": "https://github.com/elouannh/renshuu-js#readme",
+  "bugs": {
+    "url": "https://github.com/elouannh/renshuu-js/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "ehosta@student.42lyon.fr",
+    "name": "Elouann H."
+  },
+  "contributors": [
+    {
+      "email": "ehosta@student.42lyon.fr",
+      "name": "Elouann H."
+    }
+  ],
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/elouannh/dashboard"
+    }
+  ],
+  "files": [
+    "dist",
+    "typing",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "types": "typing/index.d.ts",
+  "directories": {
+    "lib": "dist"
+  },
+  "scripts": {
+    "format": "prettier -w src",
+    "lint": "eslint src",
+    "prettier": "npm run format && npm run lint",
+    "build": "node scripts/builder.js && npm run prettier && tsc",
+    "doc": "node scripts/docbuilder.js",
+    "dev": "npm run build && node dist/tests/index.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0-beta.2",
+    "dotenv": "^16.4.5",
+    "typedoc-material-theme": "^1.1.0"
+  },
+  "devDependencies": {
+    "@8hobbies/typedoc-plugin-404": "^3.0.0",
+    "@eslint/js": "^9.11.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.11.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.26.7",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0"
+  },
+  "engines": {
+    "node": ">=20.12.2",
+    "npm": ">=10.2.0",
+    "pnpm": ">=9.0.6"
+  }
+}

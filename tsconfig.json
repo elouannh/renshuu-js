@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": false,
+    "target": "es2022",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "./typing",
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types", "./typing/index.d.ts"],
+    "newLine": "crlf",
+  },
+  "include": [
+    "./src/*.ts",
+    "./src/**/*.ts",
+    "./src/**/**/*.ts",
+  ],
+  "exclude": [
+    "./node_modules",
+    "./dist/*",
+    "./dist/**/*",
+    "./typing/*",
+    "./typing/**/*",
+  ],
+}
