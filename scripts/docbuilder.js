@@ -14,7 +14,7 @@ async function main() {
         tsconfig: "tsconfig.json",
         entryPoints: ["src/*"],
         plugin: ["typedoc-material-theme", "@8hobbies/typedoc-plugin-404"],
-        themeColor: "#302257",
+        themeColor: "#00c4eb",
         alwaysCreateEntryPointModule: true,
         readme: "README.md",
         exclude: ["src/index.ts", "src/*/index.ts", "src/tests"],
@@ -38,7 +38,7 @@ async function main() {
         await app.generateJson(project, outputDir + "/documentation.json");
     }
 
-    fs.writeFileSync("docs/CNAME", "aisu.elouannhosta.com");
+    fs.writeFileSync("docs/CNAME", "renshuu-js.elouannhosta.com");
 }
 
 main().catch(console.error);

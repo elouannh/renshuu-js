@@ -1,0 +1,817 @@
+{
+	"id": 0,
+	"name": "Aisu Framework",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "client",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 3,
+					"name": "Client",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The main class to init the package."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 4,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"signatures": [
+								{
+									"id": 5,
+									"name": "new Client",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 3,
+										"name": "Client",
+										"package": "renshuu-js"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								4
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "client/Client.ts",
+							"line": 4,
+							"character": 13,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L4"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						3
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "client/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "error_manager",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 23,
+					"name": "END_CODE",
+					"variant": "declaration",
+					"kind": 8,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Some constants in an enumeration that describes some errors that can happen in the process."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 24,
+							"name": "INVALID_TOKEN_PROVIDED",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "error_manager/types.ts",
+									"line": 5,
+									"character": 1,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/types.ts#L5"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "INVALID_TOKEN_PROVIDED"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration Members",
+							"children": [
+								24
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "error_manager/types.ts",
+							"line": 4,
+							"character": 12,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/types.ts#L4"
+						}
+					]
+				},
+				{
+					"id": 9,
+					"name": "errCode",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "error_manager/main.ts",
+							"line": 26,
+							"character": 16,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L26"
+						}
+					],
+					"signatures": [
+						{
+							"id": 10,
+							"name": "errCode",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Display a red error in the console."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "error_manager/main.ts",
+									"line": 26,
+									"character": 16,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L26"
+								}
+							],
+							"parameters": [
+								{
+									"id": 11,
+									"name": "reason",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The end-of-call error code."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 24,
+										"name": "END_CODE",
+										"package": "renshuu-js",
+										"qualifiedName": "END_CODE.INVALID_TOKEN_PROVIDED"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 25,
+					"name": "errors",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The object that contains all the values from the enumeration associated string."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "error_manager/types.ts",
+							"line": 11,
+							"character": 13,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/types.ts#L11"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Record"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 23,
+								"name": "END_CODE",
+								"package": "renshuu-js"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Record",
+						"package": "typescript"
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 6,
+					"name": "errString",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "error_manager/main.ts",
+							"line": 18,
+							"character": 16,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L18"
+						}
+					],
+					"signatures": [
+						{
+							"id": 7,
+							"name": "errString",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Display a yellow warning in the console."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "error_manager/main.ts",
+									"line": 18,
+									"character": 16,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L18"
+								}
+							],
+							"parameters": [
+								{
+									"id": 8,
+									"name": "message",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The message to display in the console."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 20,
+					"name": "exit",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "error_manager/main.ts",
+							"line": 52,
+							"character": 16,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L52"
+						}
+					],
+					"signatures": [
+						{
+							"id": 21,
+							"name": "exit",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Ends the programs with a given valid error message."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "error_manager/main.ts",
+									"line": 52,
+									"character": 16,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L52"
+								}
+							],
+							"parameters": [
+								{
+									"id": 22,
+									"name": "reason",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The end-of-call error code."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 24,
+										"name": "END_CODE",
+										"package": "renshuu-js",
+										"qualifiedName": "END_CODE.INVALID_TOKEN_PROVIDED"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 26,
+					"name": "EXIT_CODE",
+					"variant": "declaration",
+					"kind": 8,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The possible exit code at the end of a command callback method call."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 28,
+							"name": "ERROR",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "error_manager/types.ts",
+									"line": 20,
+									"character": 1,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/types.ts#L20"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 1
+							}
+						},
+						{
+							"id": 27,
+							"name": "SUCCESS",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "error_manager/types.ts",
+									"line": 19,
+									"character": 1,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/types.ts#L19"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 0
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration Members",
+							"children": [
+								28,
+								27
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "error_manager/types.ts",
+							"line": 18,
+							"character": 12,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/types.ts#L18"
+						}
+					]
+				},
+				{
+					"id": 12,
+					"name": "log",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "error_manager/main.ts",
+							"line": 35,
+							"character": 16,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L35"
+						}
+					],
+					"signatures": [
+						{
+							"id": 13,
+							"name": "log",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Log something into the console (standard output)."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "error_manager/main.ts",
+									"line": 35,
+									"character": 16,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L35"
+								}
+							],
+							"parameters": [
+								{
+									"id": 14,
+									"name": "message",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The message to print."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 15,
+									"name": "optionalParams",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isRest": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Some optional parameters."
+											}
+										]
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "unknown"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 16,
+					"name": "success",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "error_manager/main.ts",
+							"line": 44,
+							"character": 16,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L44"
+						}
+					],
+					"signatures": [
+						{
+							"id": 17,
+							"name": "success",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Log something into the console (standard output) in green."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "error_manager/main.ts",
+									"line": 44,
+									"character": 16,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/main.ts#L44"
+								}
+							],
+							"parameters": [
+								{
+									"id": 18,
+									"name": "message",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The message to print."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 19,
+									"name": "optionalParams",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isRest": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Some optional parameters."
+											}
+										]
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "unknown"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"children": [
+						23,
+						26
+					]
+				},
+				{
+					"title": "Variables",
+					"children": [
+						25
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						9,
+						6,
+						20,
+						12,
+						16
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "error_manager/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/error_manager/index.ts#L1"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				1,
+				2
+			]
+		}
+	],
+	"packageName": "renshuu-js",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# renshuu-js\nGet your Client statistics and manage your schedules with this powerful NPM package. Interact with the Client API and integrate your data anywhere."
+		}
+	],
+	"symbolIdMap": {
+		"1": {
+			"sourceFileName": "src/client/index.ts",
+			"qualifiedName": ""
+		},
+		"2": {
+			"sourceFileName": "src/error_manager/index.ts",
+			"qualifiedName": ""
+		},
+		"3": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "Client"
+		},
+		"6": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "errString"
+		},
+		"7": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "errString"
+		},
+		"8": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "message"
+		},
+		"9": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "errCode"
+		},
+		"10": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "errCode"
+		},
+		"11": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "reason"
+		},
+		"12": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "log"
+		},
+		"13": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "log"
+		},
+		"14": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "message"
+		},
+		"15": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "optionalParams"
+		},
+		"16": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "success"
+		},
+		"17": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "success"
+		},
+		"18": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "message"
+		},
+		"19": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "optionalParams"
+		},
+		"20": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "exit"
+		},
+		"21": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "exit"
+		},
+		"22": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "reason"
+		},
+		"23": {
+			"sourceFileName": "src/error_manager/types.ts",
+			"qualifiedName": "END_CODE"
+		},
+		"24": {
+			"sourceFileName": "src/error_manager/types.ts",
+			"qualifiedName": "END_CODE.INVALID_TOKEN_PROVIDED"
+		},
+		"25": {
+			"sourceFileName": "src/error_manager/types.ts",
+			"qualifiedName": "errors"
+		},
+		"26": {
+			"sourceFileName": "src/error_manager/types.ts",
+			"qualifiedName": "EXIT_CODE"
+		},
+		"27": {
+			"sourceFileName": "src/error_manager/types.ts",
+			"qualifiedName": "EXIT_CODE.SUCCESS"
+		},
+		"28": {
+			"sourceFileName": "src/error_manager/types.ts",
+			"qualifiedName": "EXIT_CODE.ERROR"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/client/index.ts",
+			"2": "src/error_manager/index.ts"
+		},
+		"reflections": {
+			"1": 1,
+			"2": 2
+		}
+	}
+}
