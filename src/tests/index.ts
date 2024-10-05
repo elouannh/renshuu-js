@@ -49,4 +49,6 @@ async function main() {
 	}
 }
 
-main().catch(errString);
+main().catch((err: Error): void => {
+	errString(err.stack);
+});

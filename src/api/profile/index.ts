@@ -1,2 +1,2 @@
-export * from './Client';
 export * from './interfaces';
+export * from './Profile';
