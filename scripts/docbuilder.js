@@ -12,19 +12,18 @@ async function main() {
      */
     const app = await typeDoc.Application.bootstrapWithPlugins({
         tsconfig: "tsconfig.json",
-        entryPoints: ["src/*"],
-        plugin: ["typedoc-material-theme", "@8hobbies/typedoc-plugin-404"],
-        themeColor: "#00c4eb",
+        entryPoints: ["src/"],
+        entryPointStrategy: "Expand",
+        plugin: ["typedoc-github-theme"],
         alwaysCreateEntryPointModule: true,
         readme: "README.md",
         exclude: ["src/index.ts", "src/*/index.ts", "src/tests"],
-        sort: ["alphabetical"],
-        page404Content: "This page does not exist. What are you looking for?",
+        sort: ["kind", "alphabetical"],
         hostedBaseUrl: "https://renshuu-js.elouannhosta.com",
-        useHostedBaseUrlForAbsoluteLinks: true,
         name: "Renshuu.js",
         gitRevision: "branch/main",
         cleanOutputDir: true,
+        excludeReferences: true,
     });
 
     /**
@@ -33,6 +32,10 @@ async function main() {
      */
     const project = await app.convert();
     if (project) {
+        /**
+         *
+         * @type {string}
+         */
         const outputDir = "docs";
         await app.generateDocs(project, outputDir);
         await app.generateJson(project, outputDir + "/documentation.json");
