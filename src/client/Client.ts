@@ -12,6 +12,12 @@ export class Client {
 	private readonly instance: AxiosInstance = null;
 
 	/**
+	 * The cached data fetched from the API, avoiding useless re-calls.
+	 * @private
+	 */
+	private cache: AxiosResponse<APIProfile>;
+
+	/**
 	 * The constructor for the Renshuu.js client.
 	 * @param config The config object for the client instance.
 	 */
@@ -34,11 +40,12 @@ export class Client {
 
 	/**
 	 * Get the profile from the API.
+	 * @param fetch If the cached data should be refreshed before generating the profile instance.
 	 * @return The Renshuu Profile instance.
 	 */
-	public async getProfile(): Promise<Profile> {
-		const profile: AxiosResponse<APIProfile> = await this.instance.get<APIProfile>('/profile');
+	public async getProfile(fetch?: boolean): Promise<Profile> {
+		if (fetch || !this.cache) this.cache = await this.instance.get<APIProfile>('/profile');
 
-		return new Profile(profile);
+		return new Profile(this.cache);
 	}
 }

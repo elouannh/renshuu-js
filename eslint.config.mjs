@@ -20,7 +20,7 @@ export default tsEslint.config({
     ],
     "rules": {
         "init-declarations": ["error", "never", { "ignoreForLoopInit": true }],
-        "id-length": ["error", { "min": 3, "exceptions": ["on", "db", "i", "id", "fs", "AD"] }],
+        "id-length": ["error", { "min": 3, "exceptions": ["on", "db", "i", "id", "fs", "AD", "n1", "n2", "n3", "n4", "n5"] }],
         "max-classes-per-file": ["error", { "max": 1 }],
         "max-depth": ["error", { "max": 4 }],
         "max-lines": ["error", { "max": 1000, "skipBlankLines": true, "skipComments": true }],
@@ -31,5 +31,7 @@ export default tsEslint.config({
         "max-len": ["error", { "code": 100, "tabWidth": 4, "ignoreUrls": true }],
         "no-extraneous-class": "off",
         "@typescript-eslint/no-var-requires": ["error", { "allow": ['/package\\.json$'] }],
+        "@typescript-eslint/no-unsafe-assignment": ["off"],
+        "@typescript-eslint/no-unsafe-member-access": ["off"]
     }
 });

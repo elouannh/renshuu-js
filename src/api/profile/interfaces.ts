@@ -182,58 +182,84 @@ export interface ItemStreakData {
 	/**
 	 * How many items the user is currently streaking in a row (streak not ended yet).
 	 */
-	correctInARow: string;
+	correctInARow: number;
 	/**
 	 * The best streak score the user made for the item.
 	 */
-	correctInARowAllTime: string;
+	correctInARowAllTime: number;
 	/**
 	 * The amount of days the user has been studying this item in a row.
 	 */
-	daysStudiedInARow: string;
+	daysStudiedInARow: number;
 	/**
 	 * The amount of days the user has been studying this item in a row, but their best score.
 	 */
-	daysStudiedInARowAllTime: string;
+	daysStudiedInARowAllTime: number;
 }
 
-export interface ProfileItemCategories<T extends JLPTAmount | ItemStreakData> {
-	/**
-	 * The vocabulary: words.
-	 */
-	vocab: T;
-	/**
-	 * The kanji (Chinese characters).
-	 */
-	kanji: T;
-	/**
-	 * The grammar.
-	 */
-	grammar: T;
-	/**
-	 * The sentences.
-	 */
-	sentences: T;
-}
+/**
+ * One of the possible items (words, grammar, etc.).
+ */
+export type Item = 'vocab' | 'kanji' | 'grammar' | 'sentences';
+
+/**
+ * One of the possible items (words, grammar, etc.), but with the API typo.
+ */
+export type APIItem = 'vocab' | 'kanji' | 'grammar' | 'sent';
+
+/**
+ * One of the possible items (words, grammar, etc.), with the two types of conjugation added.
+ */
+export type ItemExtended = Item | 'adjectiveConjugation' | 'conjugation';
+
+/**
+ * One of the possible items (words, grammar, etc.), with the two types of conjugation added,
+ * but with the API typo.
+ */
+export type APIItemExtended = APIItem | 'aconj' | 'conj';
+
+/**
+ * An array with all the items included once.
+ */
+export const items: Item[] = ['vocab', 'kanji', 'grammar', 'sentences'] as const;
+
+/**
+ * An array with all the items included once, including the extended ones.
+ */
+export const itemsExtended: ItemExtended[] = [
+	'vocab',
+	'kanji',
+	'grammar',
+	'sentences',
+	'adjectiveConjugation',
+	'conjugation',
+];
+/**
+ * An array with all the items included once, but with the API typo.
+ */
+export const apiItems: APIItem[] = ['vocab', 'kanji', 'grammar', 'sent'] as const;
+
+/**
+ * An array with all the items included once, including the extended ones, but with the API typo.
+ */
+export const apiItemsExtended: APIItemExtended[] = [
+	'vocab',
+	'kanji',
+	'grammar',
+	'sent',
+	'aconj',
+	'conj',
+];
 
 /**
  * The level progress for each item, based on the JLPT level.
  */
-export type ProfileLevelProgressPercentages = ProfileItemCategories<JLPTAmount>;
+export type ProfileLevelProgressPercentages = Record<Item, JLPTAmount>;
 
 /**
  * The streak data (days and amount) for each item.
  */
-export type ProfileStreaks = ProfileItemCategories<ItemStreakData> & {
-	/**
-	 * The verb conjugation streak data.
-	 */
-	conjugation: ItemStreakData;
-	/**
-	 * The adjective conjugation streak data.
-	 */
-	adjectiveConjugation: ItemStreakData;
-};
+export type ProfileStreaks = Record<ItemExtended, ItemStreakData>;
 
 /**
  * Data about the usage of the Renshuu API and the rate limit.
