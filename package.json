@@ -54,10 +54,9 @@
     "axios": "^1.7.7",
     "chalk": "^3.0.0-beta.2",
     "dotenv": "^16.4.5",
-    "typedoc-material-theme": "^1.1.0"
+    "typedoc-github-theme": "^0.1.2"
   },
   "devDependencies": {
-    "@8hobbies/typedoc-plugin-404": "^3.0.0",
     "@eslint/js": "^9.11.0",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^9.11.0",
