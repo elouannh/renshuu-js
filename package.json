@@ -1,6 +1,6 @@
 {
   "name": "renshuu-js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Get your Renshuu statistics and manage your schedules with this powerful NPM package. Interact with the Renshuu API and integrate your data anywhere. ",
   "keywords": [
     "api",
