@@ -13,6 +13,162 @@
 			"flags": {},
 			"children": [
 				{
+					"id": 121,
+					"name": "APIItem",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "One of the possible items (words, grammar, etc.), but with the API typo."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 208,
+							"character": 12,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L208"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "vocab"
+							},
+							{
+								"type": "literal",
+								"value": "kanji"
+							},
+							{
+								"type": "literal",
+								"value": "grammar"
+							},
+							{
+								"type": "literal",
+								"value": "sent"
+							}
+						]
+					}
+				},
+				{
+					"id": 123,
+					"name": "APIItemExtended",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "One of the possible items (words, grammar, etc.), with the two types of conjugation added,\r\nbut with the API typo."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 219,
+							"character": 12,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L219"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": 121,
+								"name": "APIItem",
+								"package": "renshuu-js"
+							},
+							{
+								"type": "literal",
+								"value": "aconj"
+							},
+							{
+								"type": "literal",
+								"value": "conj"
+							}
+						]
+					}
+				},
+				{
+					"id": 126,
+					"name": "apiItems",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "An array with all the items included once, but with the API typo."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 240,
+							"character": 13,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L240"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"target": 121,
+							"name": "APIItem",
+							"package": "renshuu-js"
+						}
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 127,
+					"name": "apiItemsExtended",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "An array with all the items included once, including the extended ones, but with the API typo."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 245,
+							"character": 13,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L245"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"target": 123,
+							"name": "APIItemExtended",
+							"package": "renshuu-js"
+						}
+					},
+					"defaultValue": "..."
+				},
+				{
 					"id": 4,
 					"name": "APIProfile",
 					"variant": "declaration",
@@ -1907,6 +2063,162 @@
 					]
 				},
 				{
+					"id": 120,
+					"name": "Item",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "One of the possible items (words, grammar, etc.)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 203,
+							"character": 12,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L203"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "vocab"
+							},
+							{
+								"type": "literal",
+								"value": "kanji"
+							},
+							{
+								"type": "literal",
+								"value": "grammar"
+							},
+							{
+								"type": "literal",
+								"value": "sentences"
+							}
+						]
+					}
+				},
+				{
+					"id": 122,
+					"name": "ItemExtended",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "One of the possible items (words, grammar, etc.), with the two types of conjugation added."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 213,
+							"character": 12,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L213"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": 120,
+								"name": "Item",
+								"package": "renshuu-js"
+							},
+							{
+								"type": "literal",
+								"value": "adjectiveConjugation"
+							},
+							{
+								"type": "literal",
+								"value": "conjugation"
+							}
+						]
+					}
+				},
+				{
+					"id": 124,
+					"name": "items",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "An array with all the items included once."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 224,
+							"character": 13,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L224"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"target": 120,
+							"name": "Item",
+							"package": "renshuu-js"
+						}
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 125,
+					"name": "itemsExtended",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "An array with all the items included once, including the extended ones."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/api/profile/interfaces.ts",
+							"line": 229,
+							"character": 13,
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L229"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"target": 122,
+							"name": "ItemExtended",
+							"package": "renshuu-js"
+						}
+					},
+					"defaultValue": "..."
+				},
+				{
 					"id": 115,
 					"name": "ItemStreakData",
 					"variant": "declaration",
@@ -1945,7 +2257,7 @@
 							],
 							"type": {
 								"type": "intrinsic",
-								"name": "string"
+								"name": "number"
 							}
 						},
 						{
@@ -1972,7 +2284,7 @@
 							],
 							"type": {
 								"type": "intrinsic",
-								"name": "string"
+								"name": "number"
 							}
 						},
 						{
@@ -1999,7 +2311,7 @@
 							],
 							"type": {
 								"type": "intrinsic",
-								"name": "string"
+								"name": "number"
 							}
 						},
 						{
@@ -2026,7 +2338,7 @@
 							],
 							"type": {
 								"type": "intrinsic",
-								"name": "string"
+								"name": "number"
 							}
 						}
 					],
@@ -2223,7 +2535,7 @@
 					]
 				},
 				{
-					"id": 134,
+					"id": 133,
 					"name": "Profile",
 					"variant": "declaration",
 					"kind": 128,
@@ -2257,14 +2569,14 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 27,
+									"line": 36,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L27"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L36"
 								}
 							],
 							"type": {
 								"type": "intrinsic",
-								"name": "string"
+								"name": "number"
 							}
 						},
 						{
@@ -2287,20 +2599,20 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 57,
+									"line": 66,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L57"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L66"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 131,
+								"target": 130,
 								"name": "ProfileAPIUsage",
 								"package": "renshuu-js"
 							}
 						},
 						{
-							"id": 135,
+							"id": 134,
 							"name": "constructor",
 							"variant": "declaration",
 							"kind": 512,
@@ -2308,14 +2620,14 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 63,
+									"line": 72,
 									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L63"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L72"
 								}
 							],
 							"signatures": [
 								{
-									"id": 136,
+									"id": 135,
 									"name": "new Profile",
 									"variant": "signature",
 									"kind": 16384,
@@ -2331,14 +2643,14 @@
 									"sources": [
 										{
 											"fileName": "src/api/profile/Profile.ts",
-											"line": 63,
+											"line": 72,
 											"character": 1,
-											"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L63"
+											"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L72"
 										}
 									],
 									"parameters": [
 										{
-											"id": 137,
+											"id": 136,
 											"name": "data",
 											"variant": "param",
 											"kind": 32768,
@@ -2376,7 +2688,7 @@
 									],
 									"type": {
 										"type": "reference",
-										"target": 134,
+										"target": 133,
 										"name": "Profile",
 										"package": "renshuu-js"
 									}
@@ -2384,7 +2696,7 @@
 							]
 						},
 						{
-							"id": 147,
+							"id": 137,
 							"name": "data",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2396,38 +2708,23 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "The received axios data."
+										"text": "The API data fetched from the API."
 									}
 								]
 							},
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 63,
-									"character": 29,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L63"
+									"line": 21,
+									"character": 17,
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L21"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": {
-									"sourceFileName": "node_modules/axios/index.d.ts",
-									"qualifiedName": "AxiosResponse"
-								},
-								"typeArguments": [
-									{
-										"type": "reference",
-										"target": 4,
-										"name": "APIProfile",
-										"package": "renshuu-js"
-									},
-									{
-										"type": "intrinsic",
-										"name": "any"
-									}
-								],
-								"name": "AxiosResponse",
-								"package": "axios"
+								"target": 4,
+								"name": "APIProfile",
+								"package": "renshuu-js"
 							}
 						},
 						{
@@ -2450,9 +2747,9 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 17,
+									"line": 26,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L17"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L26"
 								}
 							],
 							"type": {
@@ -2480,9 +2777,9 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 37,
+									"line": 46,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L37"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L46"
 								}
 							],
 							"type": {
@@ -2510,14 +2807,14 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 47,
+									"line": 56,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L47"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L56"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 126,
+								"target": 128,
 								"name": "ProfileLevelProgressPercentages",
 								"package": "renshuu-js"
 							}
@@ -2542,9 +2839,9 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 22,
+									"line": 31,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L22"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L31"
 								}
 							],
 							"type": {
@@ -2572,14 +2869,14 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 52,
+									"line": 61,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L52"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L61"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 127,
+								"target": 129,
 								"name": "ProfileStreaks",
 								"package": "renshuu-js"
 							}
@@ -2604,9 +2901,9 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 42,
+									"line": 51,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L42"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L51"
 								}
 							],
 							"type": {
@@ -2636,9 +2933,9 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/Profile.ts",
-									"line": 32,
+									"line": 41,
 									"character": 17,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L32"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L41"
 								}
 							],
 							"type": {
@@ -2651,7 +2948,7 @@
 						{
 							"title": "Constructors",
 							"children": [
-								135
+								134
 							]
 						},
 						{
@@ -2659,7 +2956,7 @@
 							"children": [
 								140,
 								146,
-								147,
+								137,
 								138,
 								142,
 								144,
@@ -2673,14 +2970,14 @@
 					"sources": [
 						{
 							"fileName": "src/api/profile/Profile.ts",
-							"line": 13,
+							"line": 17,
 							"character": 13,
-							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L13"
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/Profile.ts#L17"
 						}
 					]
 				},
 				{
-					"id": 131,
+					"id": 130,
 					"name": "ProfileAPIUsage",
 					"variant": "declaration",
 					"kind": 256,
@@ -2695,7 +2992,7 @@
 					},
 					"children": [
 						{
-							"id": 132,
+							"id": 131,
 							"name": "callsToday",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2711,9 +3008,9 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/interfaces.ts",
-									"line": 245,
+									"line": 271,
 									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L245"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L271"
 								}
 							],
 							"type": {
@@ -2722,7 +3019,7 @@
 							}
 						},
 						{
-							"id": 133,
+							"id": 132,
 							"name": "dailyAllowance",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2738,9 +3035,9 @@
 							"sources": [
 								{
 									"fileName": "src/api/profile/interfaces.ts",
-									"line": 249,
+									"line": 275,
 									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L249"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L275"
 								}
 							],
 							"type": {
@@ -2753,200 +3050,22 @@
 						{
 							"title": "Properties",
 							"children": [
-								132,
-								133
+								131,
+								132
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "src/api/profile/interfaces.ts",
-							"line": 241,
+							"line": 267,
 							"character": 17,
-							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L241"
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L267"
 						}
 					]
 				},
 				{
-					"id": 120,
-					"name": "ProfileItemCategories",
-					"variant": "declaration",
-					"kind": 256,
-					"flags": {},
-					"children": [
-						{
-							"id": 123,
-							"name": "grammar",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "The grammar."
-									}
-								]
-							},
-							"sources": [
-								{
-									"fileName": "src/api/profile/interfaces.ts",
-									"line": 212,
-									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L212"
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 125,
-								"name": "T",
-								"package": "renshuu-js",
-								"qualifiedName": "ProfileItemCategories.T",
-								"refersToTypeParameter": true
-							}
-						},
-						{
-							"id": 122,
-							"name": "kanji",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "The kanji (Chinese characters)."
-									}
-								]
-							},
-							"sources": [
-								{
-									"fileName": "src/api/profile/interfaces.ts",
-									"line": 208,
-									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L208"
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 125,
-								"name": "T",
-								"package": "renshuu-js",
-								"qualifiedName": "ProfileItemCategories.T",
-								"refersToTypeParameter": true
-							}
-						},
-						{
-							"id": 124,
-							"name": "sentences",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "The sentences."
-									}
-								]
-							},
-							"sources": [
-								{
-									"fileName": "src/api/profile/interfaces.ts",
-									"line": 216,
-									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L216"
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 125,
-								"name": "T",
-								"package": "renshuu-js",
-								"qualifiedName": "ProfileItemCategories.T",
-								"refersToTypeParameter": true
-							}
-						},
-						{
-							"id": 121,
-							"name": "vocab",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "The vocabulary: words."
-									}
-								]
-							},
-							"sources": [
-								{
-									"fileName": "src/api/profile/interfaces.ts",
-									"line": 204,
-									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L204"
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 125,
-								"name": "T",
-								"package": "renshuu-js",
-								"qualifiedName": "ProfileItemCategories.T",
-								"refersToTypeParameter": true
-							}
-						}
-					],
-					"groups": [
-						{
-							"title": "Properties",
-							"children": [
-								123,
-								122,
-								124,
-								121
-							]
-						}
-					],
-					"sources": [
-						{
-							"fileName": "src/api/profile/interfaces.ts",
-							"line": 200,
-							"character": 17,
-							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L200"
-						}
-					],
-					"typeParameters": [
-						{
-							"id": 125,
-							"name": "T",
-							"variant": "typeParam",
-							"kind": 131072,
-							"flags": {},
-							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "reference",
-										"target": 109,
-										"name": "JLPTAmount",
-										"package": "renshuu-js"
-									},
-									{
-										"type": "reference",
-										"target": 115,
-										"name": "ItemStreakData",
-										"package": "renshuu-js"
-									}
-								]
-							}
-						}
-					]
-				},
-				{
-					"id": 126,
+					"id": 128,
 					"name": "ProfileLevelProgressPercentages",
 					"variant": "declaration",
 					"kind": 2097152,
@@ -2962,15 +3081,24 @@
 					"sources": [
 						{
 							"fileName": "src/api/profile/interfaces.ts",
-							"line": 222,
+							"line": 257,
 							"character": 12,
-							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L222"
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L257"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 120,
+						"target": {
+							"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Record"
+						},
 						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 120,
+								"name": "Item",
+								"package": "renshuu-js"
+							},
 							{
 								"type": "reference",
 								"target": 109,
@@ -2978,12 +3106,12 @@
 								"package": "renshuu-js"
 							}
 						],
-						"name": "ProfileItemCategories",
-						"package": "renshuu-js"
+						"name": "Record",
+						"package": "typescript"
 					}
 				},
 				{
-					"id": 127,
+					"id": 129,
 					"name": "ProfileStreaks",
 					"variant": "declaration",
 					"kind": 2097152,
@@ -2999,116 +3127,33 @@
 					"sources": [
 						{
 							"fileName": "src/api/profile/interfaces.ts",
-							"line": 227,
+							"line": 262,
 							"character": 12,
-							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L227"
+							"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L262"
 						}
 					],
 					"type": {
-						"type": "intersection",
-						"types": [
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Record"
+						},
+						"typeArguments": [
 							{
 								"type": "reference",
-								"target": 120,
-								"typeArguments": [
-									{
-										"type": "reference",
-										"target": 115,
-										"name": "ItemStreakData",
-										"package": "renshuu-js"
-									}
-								],
-								"name": "ProfileItemCategories",
+								"target": 122,
+								"name": "ItemExtended",
 								"package": "renshuu-js"
 							},
 							{
-								"type": "reflection",
-								"declaration": {
-									"id": 128,
-									"name": "__type",
-									"variant": "declaration",
-									"kind": 65536,
-									"flags": {},
-									"children": [
-										{
-											"id": 130,
-											"name": "adjectiveConjugation",
-											"variant": "declaration",
-											"kind": 1024,
-											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "The adjective conjugation streak data."
-													}
-												]
-											},
-											"sources": [
-												{
-													"fileName": "src/api/profile/interfaces.ts",
-													"line": 235,
-													"character": 1,
-													"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L235"
-												}
-											],
-											"type": {
-												"type": "reference",
-												"target": 115,
-												"name": "ItemStreakData",
-												"package": "renshuu-js"
-											}
-										},
-										{
-											"id": 129,
-											"name": "conjugation",
-											"variant": "declaration",
-											"kind": 1024,
-											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "The verb conjugation streak data."
-													}
-												]
-											},
-											"sources": [
-												{
-													"fileName": "src/api/profile/interfaces.ts",
-													"line": 231,
-													"character": 1,
-													"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L231"
-												}
-											],
-											"type": {
-												"type": "reference",
-												"target": 115,
-												"name": "ItemStreakData",
-												"package": "renshuu-js"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"children": [
-												130,
-												129
-											]
-										}
-									],
-									"sources": [
-										{
-											"fileName": "src/api/profile/interfaces.ts",
-											"line": 227,
-											"character": 69,
-											"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/api/profile/interfaces.ts#L227"
-										}
-									]
-								}
+								"type": "reference",
+								"target": 115,
+								"name": "ItemStreakData",
+								"package": "renshuu-js"
 							}
-						]
+						],
+						"name": "Record",
+						"package": "typescript"
 					}
 				},
 				{
@@ -3484,7 +3529,7 @@
 				{
 					"title": "Classes",
 					"children": [
-						134
+						133
 					]
 				},
 				{
@@ -3493,16 +3538,28 @@
 						4,
 						115,
 						109,
-						131,
-						120,
+						130,
 						96
 					]
 				},
 				{
 					"title": "Type Aliases",
 					"children": [
+						121,
+						123,
+						120,
+						122,
+						128,
+						129
+					]
+				},
+				{
+					"title": "Variables",
+					"children": [
 						126,
-						127
+						127,
+						124,
+						125
 					]
 				}
 			],
@@ -3523,7 +3580,7 @@
 			"flags": {},
 			"children": [
 				{
-					"id": 148,
+					"id": 155,
 					"name": "Client",
 					"variant": "declaration",
 					"kind": 128,
@@ -3538,7 +3595,7 @@
 					},
 					"children": [
 						{
-							"id": 153,
+							"id": 161,
 							"name": "config",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3557,20 +3614,20 @@
 							"sources": [
 								{
 									"fileName": "src/client/Client.ts",
-									"line": 18,
+									"line": 24,
 									"character": 29,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L18"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L24"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 158,
+								"target": 167,
 								"name": "CreateRenshuuConfig",
 								"package": "renshuu-js"
 							}
 						},
 						{
-							"id": 149,
+							"id": 156,
 							"name": "constructor",
 							"variant": "declaration",
 							"kind": 512,
@@ -3578,14 +3635,14 @@
 							"sources": [
 								{
 									"fileName": "src/client/Client.ts",
-									"line": 18,
+									"line": 24,
 									"character": 1,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L18"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L24"
 								}
 							],
 							"signatures": [
 								{
-									"id": 150,
+									"id": 157,
 									"name": "new Client",
 									"variant": "signature",
 									"kind": 16384,
@@ -3601,14 +3658,14 @@
 									"sources": [
 										{
 											"fileName": "src/client/Client.ts",
-											"line": 18,
+											"line": 24,
 											"character": 1,
-											"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L18"
+											"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L24"
 										}
 									],
 									"parameters": [
 										{
-											"id": 151,
+											"id": 158,
 											"name": "config",
 											"variant": "param",
 											"kind": 32768,
@@ -3623,7 +3680,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": 158,
+												"target": 167,
 												"name": "CreateRenshuuConfig",
 												"package": "renshuu-js"
 											}
@@ -3631,7 +3688,7 @@
 									],
 									"type": {
 										"type": "reference",
-										"target": 148,
+										"target": 155,
 										"name": "Client",
 										"package": "renshuu-js"
 									}
@@ -3639,7 +3696,7 @@
 							]
 						},
 						{
-							"id": 156,
+							"id": 164,
 							"name": "getProfile",
 							"variant": "declaration",
 							"kind": 2048,
@@ -3649,14 +3706,14 @@
 							"sources": [
 								{
 									"fileName": "src/client/Client.ts",
-									"line": 39,
+									"line": 46,
 									"character": 14,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L39"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L46"
 								}
 							],
 							"signatures": [
 								{
-									"id": 157,
+									"id": 165,
 									"name": "getProfile",
 									"variant": "signature",
 									"kind": 4096,
@@ -3683,9 +3740,32 @@
 									"sources": [
 										{
 											"fileName": "src/client/Client.ts",
-											"line": 39,
+											"line": 46,
 											"character": 14,
-											"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L39"
+											"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L46"
+										}
+									],
+									"parameters": [
+										{
+											"id": 166,
+											"name": "fetch",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "If the cached data should be refreshed before generating the profile instance."
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
 										}
 									],
 									"type": {
@@ -3697,7 +3777,7 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": 134,
+												"target": 133,
 												"name": "Profile",
 												"package": "renshuu-js"
 											}
@@ -3709,7 +3789,7 @@
 							]
 						},
 						{
-							"id": 154,
+							"id": 162,
 							"name": "rest",
 							"variant": "declaration",
 							"kind": 262144,
@@ -3719,13 +3799,13 @@
 							"sources": [
 								{
 									"fileName": "src/client/Client.ts",
-									"line": 31,
+									"line": 37,
 									"character": 12,
-									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L31"
+									"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L37"
 								}
 							],
 							"getSignature": {
-								"id": 155,
+								"id": 163,
 								"name": "rest",
 								"variant": "signature",
 								"kind": 524288,
@@ -3752,9 +3832,9 @@
 								"sources": [
 									{
 										"fileName": "src/client/Client.ts",
-										"line": 31,
+										"line": 37,
 										"character": 12,
-										"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L31"
+										"url": "https://github.com/elouannh/renshuu-js/blob/branch/main/src/client/Client.ts#L37"
 									}
 								],
 								"type": {
@@ -3773,25 +3853,25 @@
 						{
 							"title": "Constructors",
 							"children": [
-								149
+								156
 							]
 						},
 						{
 							"title": "Properties",
 							"children": [
-								153
+								161
 							]
 						},
 						{
 							"title": "Accessors",
 							"children": [
-								154
+								162
 							]
 						},
 						{
 							"title": "Methods",
 							"children": [
-								156
+								164
 							]
 						}
 					],
@@ -3805,7 +3885,7 @@
 					]
 				},
 				{
-					"id": 158,
+					"id": 167,
 					"name": "CreateRenshuuConfig",
 					"variant": "declaration",
 					"kind": 256,
@@ -3820,7 +3900,7 @@
 					},
 					"children": [
 						{
-							"id": 180,
+							"id": 189,
 							"name": "adapter",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3869,7 +3949,7 @@
 							}
 						},
 						{
-							"id": 181,
+							"id": 190,
 							"name": "auth",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3901,7 +3981,7 @@
 							}
 						},
 						{
-							"id": 171,
+							"id": 180,
 							"name": "baseURL",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3928,7 +4008,7 @@
 							}
 						},
 						{
-							"id": 202,
+							"id": 211,
 							"name": "beforeRedirect",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3947,7 +4027,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 203,
+									"id": 212,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -3963,7 +4043,7 @@
 									],
 									"signatures": [
 										{
-											"id": 204,
+											"id": 213,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -3979,7 +4059,7 @@
 											],
 											"parameters": [
 												{
-													"id": 205,
+													"id": 214,
 													"name": "options",
 													"variant": "param",
 													"kind": 32768,
@@ -4007,7 +4087,7 @@
 													}
 												},
 												{
-													"id": 206,
+													"id": 215,
 													"name": "responseDetails",
 													"variant": "param",
 													"kind": 32768,
@@ -4017,7 +4097,7 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 207,
+															"id": 216,
 															"name": "__type",
 															"variant": "declaration",
 															"kind": 65536,
@@ -4026,7 +4106,7 @@
 															},
 															"children": [
 																{
-																	"id": 208,
+																	"id": 217,
 																	"name": "headers",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4061,7 +4141,7 @@
 																	}
 																},
 																{
-																	"id": 209,
+																	"id": 218,
 																	"name": "statusCode",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4090,8 +4170,8 @@
 																{
 																	"title": "Properties",
 																	"children": [
-																		208,
-																		209
+																		217,
+																		218
 																	]
 																}
 															],
@@ -4121,7 +4201,7 @@
 							}
 						},
 						{
-							"id": 215,
+							"id": 224,
 							"name": "cancelToken",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4153,7 +4233,7 @@
 							}
 						},
 						{
-							"id": 176,
+							"id": 185,
 							"name": "data",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4180,7 +4260,7 @@
 							}
 						},
 						{
-							"id": 216,
+							"id": 225,
 							"name": "decompress",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4207,7 +4287,7 @@
 							}
 						},
 						{
-							"id": 220,
+							"id": 229,
 							"name": "env",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4226,7 +4306,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 221,
+									"id": 230,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -4235,7 +4315,7 @@
 									},
 									"children": [
 										{
-											"id": 222,
+											"id": 231,
 											"name": "FormData",
 											"variant": "declaration",
 											"kind": 1024,
@@ -4253,7 +4333,7 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 223,
+													"id": 232,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 512,
@@ -4269,7 +4349,7 @@
 													],
 													"signatures": [
 														{
-															"id": 224,
+															"id": 233,
 															"name": "new FormData",
 															"variant": "signature",
 															"kind": 16384,
@@ -4285,7 +4365,7 @@
 															],
 															"parameters": [
 																{
-																	"id": 225,
+																	"id": 234,
 																	"name": "args",
 																	"variant": "param",
 																	"kind": 32768,
@@ -4316,7 +4396,7 @@
 										{
 											"title": "Properties",
 											"children": [
-												222
+												231
 											]
 										}
 									],
@@ -4336,7 +4416,7 @@
 							}
 						},
 						{
-							"id": 227,
+							"id": 236,
 							"name": "family",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4368,7 +4448,7 @@
 							}
 						},
 						{
-							"id": 247,
+							"id": 256,
 							"name": "fetchOptions",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4410,7 +4490,7 @@
 							}
 						},
 						{
-							"id": 226,
+							"id": 235,
 							"name": "formSerializer",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4442,7 +4522,7 @@
 							}
 						},
 						{
-							"id": 160,
+							"id": 169,
 							"name": "headers",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4512,7 +4592,7 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 161,
+															"id": 170,
 															"name": "__type",
 															"variant": "declaration",
 															"kind": 65536,
@@ -4521,7 +4601,7 @@
 															},
 															"children": [
 																{
-																	"id": 162,
+																	"id": 171,
 																	"name": "Accept",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4539,7 +4619,7 @@
 																	}
 																},
 																{
-																	"id": 166,
+																	"id": 175,
 																	"name": "Authorization",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4557,7 +4637,7 @@
 																	}
 																},
 																{
-																	"id": 165,
+																	"id": 174,
 																	"name": "Content-Encoding",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4575,7 +4655,7 @@
 																	}
 																},
 																{
-																	"id": 163,
+																	"id": 172,
 																	"name": "Content-Length",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4593,7 +4673,7 @@
 																	}
 																},
 																{
-																	"id": 164,
+																	"id": 173,
 																	"name": "User-Agent",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4615,11 +4695,11 @@
 																{
 																	"title": "Properties",
 																	"children": [
-																		162,
-																		166,
-																		165,
-																		163,
-																		164
+																		171,
+																		175,
+																		174,
+																		172,
+																		173
 																	]
 																}
 															],
@@ -4635,7 +4715,7 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 167,
+															"id": 176,
 															"name": "__type",
 															"variant": "declaration",
 															"kind": 65536,
@@ -4644,7 +4724,7 @@
 															},
 															"children": [
 																{
-																	"id": 168,
+																	"id": 177,
 																	"name": "Content-Type",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -4673,7 +4753,7 @@
 																{
 																	"title": "Properties",
 																	"children": [
-																		168
+																		177
 																	]
 																}
 															],
@@ -4701,7 +4781,7 @@
 							}
 						},
 						{
-							"id": 212,
+							"id": 221,
 							"name": "httpAgent",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4728,7 +4808,7 @@
 							}
 						},
 						{
-							"id": 213,
+							"id": 222,
 							"name": "httpsAgent",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4755,7 +4835,7 @@
 							}
 						},
 						{
-							"id": 219,
+							"id": 228,
 							"name": "insecureHTTPParser",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4782,7 +4862,7 @@
 							}
 						},
 						{
-							"id": 228,
+							"id": 237,
 							"name": "lookup",
 							"variant": "declaration",
 							"kind": 1024,
@@ -4804,7 +4884,7 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 229,
+											"id": 238,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -4820,7 +4900,7 @@
 											],
 											"signatures": [
 												{
-													"id": 230,
+													"id": 239,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -4836,7 +4916,7 @@
 													],
 													"parameters": [
 														{
-															"id": 231,
+															"id": 240,
 															"name": "hostname",
 															"variant": "param",
 															"kind": 32768,
@@ -4849,7 +4929,7 @@
 															}
 														},
 														{
-															"id": 232,
+															"id": 241,
 															"name": "options",
 															"variant": "param",
 															"kind": 32768,
@@ -4862,7 +4942,7 @@
 															}
 														},
 														{
-															"id": 233,
+															"id": 242,
 															"name": "cb",
 															"variant": "param",
 															"kind": 32768,
@@ -4872,7 +4952,7 @@
 															"type": {
 																"type": "reflection",
 																"declaration": {
-																	"id": 234,
+																	"id": 243,
 																	"name": "__type",
 																	"variant": "declaration",
 																	"kind": 65536,
@@ -4888,7 +4968,7 @@
 																	],
 																	"signatures": [
 																		{
-																			"id": 235,
+																			"id": 244,
 																			"name": "__type",
 																			"variant": "signature",
 																			"kind": 4096,
@@ -4904,7 +4984,7 @@
 																			],
 																			"parameters": [
 																				{
-																					"id": 236,
+																					"id": 245,
 																					"name": "err",
 																					"variant": "param",
 																					"kind": 32768,
@@ -4922,7 +5002,7 @@
 																					}
 																				},
 																				{
-																					"id": 237,
+																					"id": 246,
 																					"name": "address",
 																					"variant": "param",
 																					"kind": 32768,
@@ -4957,7 +5037,7 @@
 																					}
 																				},
 																				{
-																					"id": 238,
+																					"id": 247,
 																					"name": "family",
 																					"variant": "param",
 																					"kind": 32768,
@@ -4997,7 +5077,7 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 239,
+											"id": 248,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -5013,7 +5093,7 @@
 											],
 											"signatures": [
 												{
-													"id": 240,
+													"id": 249,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -5029,7 +5109,7 @@
 													],
 													"parameters": [
 														{
-															"id": 241,
+															"id": 250,
 															"name": "hostname",
 															"variant": "param",
 															"kind": 32768,
@@ -5042,7 +5122,7 @@
 															}
 														},
 														{
-															"id": 242,
+															"id": 251,
 															"name": "options",
 															"variant": "param",
 															"kind": 32768,
@@ -5143,7 +5223,7 @@
 							}
 						},
 						{
-							"id": 199,
+							"id": 208,
 							"name": "maxBodyLength",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5170,7 +5250,7 @@
 							}
 						},
 						{
-							"id": 194,
+							"id": 203,
 							"name": "maxContentLength",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5197,7 +5277,7 @@
 							}
 						},
 						{
-							"id": 201,
+							"id": 210,
 							"name": "maxRate",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5242,7 +5322,7 @@
 							}
 						},
 						{
-							"id": 200,
+							"id": 209,
 							"name": "maxRedirects",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5269,7 +5349,7 @@
 							}
 						},
 						{
-							"id": 170,
+							"id": 179,
 							"name": "method",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5296,7 +5376,7 @@
 							}
 						},
 						{
-							"id": 190,
+							"id": 199,
 							"name": "onDownloadProgress",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5315,7 +5395,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 191,
+									"id": 200,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -5331,7 +5411,7 @@
 									],
 									"signatures": [
 										{
-											"id": 192,
+											"id": 201,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -5347,7 +5427,7 @@
 											],
 											"parameters": [
 												{
-													"id": 193,
+													"id": 202,
 													"name": "progressEvent",
 													"variant": "param",
 													"kind": 32768,
@@ -5380,7 +5460,7 @@
 							}
 						},
 						{
-							"id": 186,
+							"id": 195,
 							"name": "onUploadProgress",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5399,7 +5479,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 187,
+									"id": 196,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -5415,7 +5495,7 @@
 									],
 									"signatures": [
 										{
-											"id": 188,
+											"id": 197,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -5431,7 +5511,7 @@
 											],
 											"parameters": [
 												{
-													"id": 189,
+													"id": 198,
 													"name": "progressEvent",
 													"variant": "param",
 													"kind": 32768,
@@ -5464,7 +5544,7 @@
 							}
 						},
 						{
-							"id": 174,
+							"id": 183,
 							"name": "params",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5491,7 +5571,7 @@
 							}
 						},
 						{
-							"id": 175,
+							"id": 184,
 							"name": "paramsSerializer",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5537,7 +5617,7 @@
 							}
 						},
 						{
-							"id": 214,
+							"id": 223,
 							"name": "proxy",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5578,7 +5658,7 @@
 							}
 						},
 						{
-							"id": 159,
+							"id": 168,
 							"name": "renshuuApiKey",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5607,7 +5687,7 @@
 							}
 						},
 						{
-							"id": 183,
+							"id": 192,
 							"name": "responseEncoding",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5634,7 +5714,7 @@
 							}
 						},
 						{
-							"id": 182,
+							"id": 191,
 							"name": "responseType",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5666,7 +5746,7 @@
 							}
 						},
 						{
-							"id": 218,
+							"id": 227,
 							"name": "signal",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5698,7 +5778,7 @@
 							}
 						},
 						{
-							"id": 210,
+							"id": 219,
 							"name": "socketPath",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5725,7 +5805,7 @@
 							}
 						},
 						{
-							"id": 177,
+							"id": 186,
 							"name": "timeout",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5752,7 +5832,7 @@
 							}
 						},
 						{
-							"id": 178,
+							"id": 187,
 							"name": "timeoutErrorMessage",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5779,7 +5859,7 @@
 							}
 						},
 						{
-							"id": 172,
+							"id": 181,
 							"name": "transformRequest",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5828,7 +5908,7 @@
 							}
 						},
 						{
-							"id": 173,
+							"id": 182,
 							"name": "transformResponse",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5877,7 +5957,7 @@
 							}
 						},
 						{
-							"id": 217,
+							"id": 226,
 							"name": "transitional",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5909,7 +5989,7 @@
 							}
 						},
 						{
-							"id": 211,
+							"id": 220,
 							"name": "transport",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5936,7 +6016,7 @@
 							}
 						},
 						{
-							"id": 169,
+							"id": 178,
 							"name": "url",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5963,7 +6043,7 @@
 							}
 						},
 						{
-							"id": 195,
+							"id": 204,
 							"name": "validateStatus",
 							"variant": "declaration",
 							"kind": 1024,
@@ -5982,7 +6062,7 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 196,
+									"id": 205,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -5998,7 +6078,7 @@
 									],
 									"signatures": [
 										{
-											"id": 197,
+											"id": 206,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -6014,7 +6094,7 @@
 											],
 											"parameters": [
 												{
-													"id": 198,
+													"id": 207,
 													"name": "status",
 													"variant": "param",
 													"kind": 32768,
@@ -6042,7 +6122,7 @@
 							}
 						},
 						{
-							"id": 179,
+							"id": 188,
 							"name": "withCredentials",
 							"variant": "declaration",
 							"kind": 1024,
@@ -6069,7 +6149,7 @@
 							}
 						},
 						{
-							"id": 243,
+							"id": 252,
 							"name": "withXSRFToken",
 							"variant": "declaration",
 							"kind": 1024,
@@ -6095,7 +6175,7 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 244,
+											"id": 253,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -6111,7 +6191,7 @@
 											],
 											"signatures": [
 												{
-													"id": 245,
+													"id": 254,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -6127,7 +6207,7 @@
 													],
 													"parameters": [
 														{
-															"id": 246,
+															"id": 255,
 															"name": "config",
 															"variant": "param",
 															"kind": 32768,
@@ -6168,7 +6248,7 @@
 							}
 						},
 						{
-							"id": 184,
+							"id": 193,
 							"name": "xsrfCookieName",
 							"variant": "declaration",
 							"kind": 1024,
@@ -6195,7 +6275,7 @@
 							}
 						},
 						{
-							"id": 185,
+							"id": 194,
 							"name": "xsrfHeaderName",
 							"variant": "declaration",
 							"kind": 1024,
@@ -6226,49 +6306,49 @@
 						{
 							"title": "Properties",
 							"children": [
-								180,
-								181,
-								171,
-								202,
-								215,
-								176,
-								216,
-								220,
-								227,
-								247,
-								226,
-								160,
-								212,
-								213,
-								219,
-								228,
-								199,
-								194,
-								201,
-								200,
-								170,
+								189,
 								190,
-								186,
-								174,
-								175,
-								214,
-								159,
-								183,
-								182,
-								218,
-								210,
-								177,
-								178,
-								172,
-								173,
-								217,
+								180,
 								211,
+								224,
+								185,
+								225,
+								229,
+								236,
+								256,
+								235,
 								169,
-								195,
+								221,
+								222,
+								228,
+								237,
+								208,
+								203,
+								210,
+								209,
 								179,
-								243,
+								199,
+								195,
+								183,
 								184,
-								185
+								223,
+								168,
+								192,
+								191,
+								227,
+								219,
+								186,
+								187,
+								181,
+								182,
+								226,
+								220,
+								178,
+								204,
+								188,
+								252,
+								193,
+								194
 							]
 						}
 					],
@@ -6297,13 +6377,13 @@
 				{
 					"title": "Classes",
 					"children": [
-						148
+						155
 					]
 				},
 				{
 					"title": "Interfaces",
 					"children": [
-						158
+						167
 					]
 				}
 			],
@@ -6324,7 +6404,7 @@
 			"flags": {},
 			"children": [
 				{
-					"id": 265,
+					"id": 274,
 					"name": "END_CODE",
 					"variant": "declaration",
 					"kind": 8,
@@ -6339,7 +6419,7 @@
 					},
 					"children": [
 						{
-							"id": 266,
+							"id": 275,
 							"name": "INVALID_TOKEN_PROVIDED",
 							"variant": "declaration",
 							"kind": 16,
@@ -6362,7 +6442,7 @@
 						{
 							"title": "Enumeration Members",
 							"children": [
-								266
+								275
 							]
 						}
 					],
@@ -6376,7 +6456,7 @@
 					]
 				},
 				{
-					"id": 251,
+					"id": 260,
 					"name": "errCode",
 					"variant": "declaration",
 					"kind": 64,
@@ -6391,7 +6471,7 @@
 					],
 					"signatures": [
 						{
-							"id": 252,
+							"id": 261,
 							"name": "errCode",
 							"variant": "signature",
 							"kind": 4096,
@@ -6414,7 +6494,7 @@
 							],
 							"parameters": [
 								{
-									"id": 253,
+									"id": 262,
 									"name": "reason",
 									"variant": "param",
 									"kind": 32768,
@@ -6429,7 +6509,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 266,
+										"target": 275,
 										"name": "END_CODE",
 										"package": "renshuu-js",
 										"qualifiedName": "END_CODE.INVALID_TOKEN_PROVIDED"
@@ -6444,7 +6524,7 @@
 					]
 				},
 				{
-					"id": 267,
+					"id": 276,
 					"name": "errors",
 					"variant": "declaration",
 					"kind": 32,
@@ -6476,7 +6556,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": 265,
+								"target": 274,
 								"name": "END_CODE",
 								"package": "renshuu-js"
 							},
@@ -6491,7 +6571,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 248,
+					"id": 257,
 					"name": "errString",
 					"variant": "declaration",
 					"kind": 64,
@@ -6506,7 +6586,7 @@
 					],
 					"signatures": [
 						{
-							"id": 249,
+							"id": 258,
 							"name": "errString",
 							"variant": "signature",
 							"kind": 4096,
@@ -6529,7 +6609,7 @@
 							],
 							"parameters": [
 								{
-									"id": 250,
+									"id": 259,
 									"name": "message",
 									"variant": "param",
 									"kind": 32768,
@@ -6556,7 +6636,7 @@
 					]
 				},
 				{
-					"id": 262,
+					"id": 271,
 					"name": "exit",
 					"variant": "declaration",
 					"kind": 64,
@@ -6571,7 +6651,7 @@
 					],
 					"signatures": [
 						{
-							"id": 263,
+							"id": 272,
 							"name": "exit",
 							"variant": "signature",
 							"kind": 4096,
@@ -6594,7 +6674,7 @@
 							],
 							"parameters": [
 								{
-									"id": 264,
+									"id": 273,
 									"name": "reason",
 									"variant": "param",
 									"kind": 32768,
@@ -6609,7 +6689,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 266,
+										"target": 275,
 										"name": "END_CODE",
 										"package": "renshuu-js",
 										"qualifiedName": "END_CODE.INVALID_TOKEN_PROVIDED"
@@ -6624,7 +6704,7 @@
 					]
 				},
 				{
-					"id": 268,
+					"id": 277,
 					"name": "EXIT_CODE",
 					"variant": "declaration",
 					"kind": 8,
@@ -6639,7 +6719,7 @@
 					},
 					"children": [
 						{
-							"id": 270,
+							"id": 279,
 							"name": "ERROR",
 							"variant": "declaration",
 							"kind": 16,
@@ -6658,7 +6738,7 @@
 							}
 						},
 						{
-							"id": 269,
+							"id": 278,
 							"name": "SUCCESS",
 							"variant": "declaration",
 							"kind": 16,
@@ -6681,8 +6761,8 @@
 						{
 							"title": "Enumeration Members",
 							"children": [
-								270,
-								269
+								279,
+								278
 							]
 						}
 					],
@@ -6696,7 +6776,7 @@
 					]
 				},
 				{
-					"id": 254,
+					"id": 263,
 					"name": "log",
 					"variant": "declaration",
 					"kind": 64,
@@ -6711,7 +6791,7 @@
 					],
 					"signatures": [
 						{
-							"id": 255,
+							"id": 264,
 							"name": "log",
 							"variant": "signature",
 							"kind": 4096,
@@ -6734,7 +6814,7 @@
 							],
 							"parameters": [
 								{
-									"id": 256,
+									"id": 265,
 									"name": "message",
 									"variant": "param",
 									"kind": 32768,
@@ -6755,7 +6835,7 @@
 									}
 								},
 								{
-									"id": 257,
+									"id": 266,
 									"name": "optionalParams",
 									"variant": "param",
 									"kind": 32768,
@@ -6787,7 +6867,7 @@
 					]
 				},
 				{
-					"id": 258,
+					"id": 267,
 					"name": "success",
 					"variant": "declaration",
 					"kind": 64,
@@ -6802,7 +6882,7 @@
 					],
 					"signatures": [
 						{
-							"id": 259,
+							"id": 268,
 							"name": "success",
 							"variant": "signature",
 							"kind": 4096,
@@ -6825,7 +6905,7 @@
 							],
 							"parameters": [
 								{
-									"id": 260,
+									"id": 269,
 									"name": "message",
 									"variant": "param",
 									"kind": 32768,
@@ -6846,7 +6926,7 @@
 									}
 								},
 								{
-									"id": 261,
+									"id": 270,
 									"name": "optionalParams",
 									"variant": "param",
 									"kind": 32768,
@@ -6882,24 +6962,24 @@
 				{
 					"title": "Enumerations",
 					"children": [
-						265,
-						268
+						274,
+						277
 					]
 				},
 				{
 					"title": "Variables",
 					"children": [
-						267
+						276
 					]
 				},
 				{
 					"title": "Functions",
 					"children": [
-						251,
-						248,
-						262,
-						254,
-						258
+						260,
+						257,
+						271,
+						263,
+						267
 					]
 				}
 			],
@@ -7409,75 +7489,75 @@
 		},
 		"120": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileItemCategories"
+			"qualifiedName": "Item"
 		},
 		"121": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileItemCategories.vocab"
+			"qualifiedName": "APIItem"
 		},
 		"122": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileItemCategories.kanji"
+			"qualifiedName": "ItemExtended"
 		},
 		"123": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileItemCategories.grammar"
+			"qualifiedName": "APIItemExtended"
 		},
 		"124": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileItemCategories.sentences"
+			"qualifiedName": "items"
 		},
 		"125": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileItemCategories.T"
+			"qualifiedName": "itemsExtended"
 		},
 		"126": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileLevelProgressPercentages"
+			"qualifiedName": "apiItems"
 		},
 		"127": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileStreaks"
+			"qualifiedName": "apiItemsExtended"
 		},
 		"128": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "ProfileLevelProgressPercentages"
 		},
 		"129": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "__type.conjugation"
+			"qualifiedName": "ProfileStreaks"
 		},
 		"130": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "__type.adjectiveConjugation"
+			"qualifiedName": "ProfileAPIUsage"
 		},
 		"131": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileAPIUsage"
+			"qualifiedName": "ProfileAPIUsage.callsToday"
 		},
 		"132": {
 			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileAPIUsage.callsToday"
+			"qualifiedName": "ProfileAPIUsage.dailyAllowance"
 		},
 		"133": {
-			"sourceFileName": "src/api/profile/interfaces.ts",
-			"qualifiedName": "ProfileAPIUsage.dailyAllowance"
+			"sourceFileName": "src/api/profile/Profile.ts",
+			"qualifiedName": "Profile"
 		},
 		"134": {
 			"sourceFileName": "src/api/profile/Profile.ts",
-			"qualifiedName": "Profile"
+			"qualifiedName": "Profile.__constructor"
 		},
 		"135": {
 			"sourceFileName": "src/api/profile/Profile.ts",
-			"qualifiedName": "Profile.__constructor"
+			"qualifiedName": "Profile"
 		},
 		"136": {
 			"sourceFileName": "src/api/profile/Profile.ts",
-			"qualifiedName": "Profile"
+			"qualifiedName": "data"
 		},
 		"137": {
 			"sourceFileName": "src/api/profile/Profile.ts",
-			"qualifiedName": "data"
+			"qualifiedName": "Profile.data"
 		},
 		"138": {
 			"sourceFileName": "src/api/profile/Profile.ts",
@@ -7515,197 +7595,161 @@
 			"sourceFileName": "src/api/profile/Profile.ts",
 			"qualifiedName": "Profile.apiUsage"
 		},
-		"147": {
-			"sourceFileName": "src/api/profile/Profile.ts",
-			"qualifiedName": "Profile.data"
-		},
-		"148": {
-			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client"
-		},
-		"149": {
-			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client.__constructor"
-		},
-		"150": {
-			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client"
-		},
-		"151": {
-			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "config"
-		},
-		"153": {
-			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client.config"
-		},
-		"154": {
-			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client.rest"
-		},
 		"155": {
 			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client.rest"
+			"qualifiedName": "Client"
 		},
 		"156": {
 			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client.getProfile"
+			"qualifiedName": "Client.__constructor"
 		},
 		"157": {
 			"sourceFileName": "src/client/Client.ts",
-			"qualifiedName": "Client.getProfile"
+			"qualifiedName": "Client"
 		},
 		"158": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "config"
+		},
+		"161": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "Client.config"
+		},
+		"162": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "Client.rest"
+		},
+		"163": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "Client.rest"
+		},
+		"164": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "Client.getProfile"
+		},
+		"165": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "Client.getProfile"
+		},
+		"166": {
+			"sourceFileName": "src/client/Client.ts",
+			"qualifiedName": "fetch"
+		},
+		"167": {
 			"sourceFileName": "src/client/interfaces.ts",
 			"qualifiedName": "CreateRenshuuConfig"
 		},
-		"159": {
+		"168": {
 			"sourceFileName": "src/client/interfaces.ts",
 			"qualifiedName": "CreateRenshuuConfig.renshuuApiKey"
 		},
-		"160": {
+		"169": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
 			"qualifiedName": "CreateAxiosDefaults.headers"
 		},
-		"161": {
+		"170": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
 			"qualifiedName": "__type"
 		},
-		"162": {
+		"171": {
 			"sourceFileName": "",
 			"qualifiedName": "Accept"
 		},
-		"163": {
+		"172": {
 			"sourceFileName": "",
 			"qualifiedName": "Content-Length"
 		},
-		"164": {
+		"173": {
 			"sourceFileName": "",
 			"qualifiedName": "User-Agent"
 		},
-		"165": {
+		"174": {
 			"sourceFileName": "",
 			"qualifiedName": "Content-Encoding"
 		},
-		"166": {
+		"175": {
 			"sourceFileName": "",
 			"qualifiedName": "Authorization"
 		},
-		"167": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
-		},
-		"168": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type.Content-Type"
-		},
-		"169": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "url"
-		},
-		"170": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "method"
-		},
-		"171": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "baseURL"
-		},
-		"172": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "transformRequest"
-		},
-		"173": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "transformResponse"
-		},
-		"174": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "params"
-		},
-		"175": {
-			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "paramsSerializer"
-		},
 		"176": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "data"
+			"qualifiedName": "__type"
 		},
 		"177": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "timeout"
+			"qualifiedName": "__type.Content-Type"
 		},
 		"178": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "timeoutErrorMessage"
+			"qualifiedName": "url"
 		},
 		"179": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "withCredentials"
+			"qualifiedName": "method"
 		},
 		"180": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "adapter"
+			"qualifiedName": "baseURL"
 		},
 		"181": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "auth"
+			"qualifiedName": "transformRequest"
 		},
 		"182": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "responseType"
+			"qualifiedName": "transformResponse"
 		},
 		"183": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "responseEncoding"
+			"qualifiedName": "params"
 		},
 		"184": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "xsrfCookieName"
+			"qualifiedName": "paramsSerializer"
 		},
 		"185": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "xsrfHeaderName"
+			"qualifiedName": "data"
 		},
 		"186": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "onUploadProgress"
+			"qualifiedName": "timeout"
 		},
 		"187": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "timeoutErrorMessage"
 		},
 		"188": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "withCredentials"
 		},
 		"189": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "progressEvent"
+			"qualifiedName": "adapter"
 		},
 		"190": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "onDownloadProgress"
+			"qualifiedName": "auth"
 		},
 		"191": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "responseType"
 		},
 		"192": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "responseEncoding"
 		},
 		"193": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "progressEvent"
+			"qualifiedName": "xsrfCookieName"
 		},
 		"194": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "maxContentLength"
+			"qualifiedName": "xsrfHeaderName"
 		},
 		"195": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "validateStatus"
+			"qualifiedName": "onUploadProgress"
 		},
 		"196": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
@@ -7717,131 +7761,131 @@
 		},
 		"198": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "status"
+			"qualifiedName": "progressEvent"
 		},
 		"199": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "maxBodyLength"
+			"qualifiedName": "onDownloadProgress"
 		},
 		"200": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "maxRedirects"
+			"qualifiedName": "__type"
 		},
 		"201": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "maxRate"
+			"qualifiedName": "__type"
 		},
 		"202": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "beforeRedirect"
+			"qualifiedName": "progressEvent"
 		},
 		"203": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "maxContentLength"
 		},
 		"204": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "validateStatus"
 		},
 		"205": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "options"
+			"qualifiedName": "__type"
 		},
 		"206": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "responseDetails"
+			"qualifiedName": "__type"
 		},
 		"207": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "status"
 		},
 		"208": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type.headers"
+			"qualifiedName": "maxBodyLength"
 		},
 		"209": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type.statusCode"
+			"qualifiedName": "maxRedirects"
 		},
 		"210": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "socketPath"
+			"qualifiedName": "maxRate"
 		},
 		"211": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "transport"
+			"qualifiedName": "beforeRedirect"
 		},
 		"212": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "httpAgent"
+			"qualifiedName": "__type"
 		},
 		"213": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "httpsAgent"
+			"qualifiedName": "__type"
 		},
 		"214": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "proxy"
+			"qualifiedName": "options"
 		},
 		"215": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "cancelToken"
+			"qualifiedName": "responseDetails"
 		},
 		"216": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "decompress"
+			"qualifiedName": "__type"
 		},
 		"217": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "transitional"
+			"qualifiedName": "__type.headers"
 		},
 		"218": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "signal"
+			"qualifiedName": "__type.statusCode"
 		},
 		"219": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "insecureHTTPParser"
+			"qualifiedName": "socketPath"
 		},
 		"220": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "env"
+			"qualifiedName": "transport"
 		},
 		"221": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "httpAgent"
 		},
 		"222": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type.FormData"
+			"qualifiedName": "httpsAgent"
 		},
 		"223": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "proxy"
 		},
 		"224": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "cancelToken"
 		},
 		"225": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "args"
+			"qualifiedName": "decompress"
 		},
 		"226": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "formSerializer"
+			"qualifiedName": "transitional"
 		},
 		"227": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "family"
+			"qualifiedName": "signal"
 		},
 		"228": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "lookup"
+			"qualifiedName": "insecureHTTPParser"
 		},
 		"229": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "env"
 		},
 		"230": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
@@ -7849,35 +7893,35 @@
 		},
 		"231": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "hostname"
+			"qualifiedName": "__type.FormData"
 		},
 		"232": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "options"
+			"qualifiedName": "__type"
 		},
 		"233": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "cb"
+			"qualifiedName": "__type"
 		},
 		"234": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "args"
 		},
 		"235": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "formSerializer"
 		},
 		"236": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "err"
+			"qualifiedName": "family"
 		},
 		"237": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "address"
+			"qualifiedName": "lookup"
 		},
 		"238": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "family"
+			"qualifiedName": "__type"
 		},
 		"239": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
@@ -7885,19 +7929,19 @@
 		},
 		"240": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "hostname"
 		},
 		"241": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "hostname"
+			"qualifiedName": "options"
 		},
 		"242": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "options"
+			"qualifiedName": "cb"
 		},
 		"243": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "withXSRFToken"
+			"qualifiedName": "__type"
 		},
 		"244": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
@@ -7905,105 +7949,141 @@
 		},
 		"245": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "err"
 		},
 		"246": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "config"
+			"qualifiedName": "address"
 		},
 		"247": {
 			"sourceFileName": "node_modules/axios/index.d.ts",
-			"qualifiedName": "fetchOptions"
+			"qualifiedName": "family"
 		},
 		"248": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "errString"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
 		},
 		"249": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "errString"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
 		},
 		"250": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "message"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "hostname"
 		},
 		"251": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "errCode"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "options"
 		},
 		"252": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "errCode"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "withXSRFToken"
 		},
 		"253": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "reason"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
 		},
 		"254": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "log"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
 		},
 		"255": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "log"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "config"
 		},
 		"256": {
-			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "message"
+			"sourceFileName": "node_modules/axios/index.d.ts",
+			"qualifiedName": "fetchOptions"
 		},
 		"257": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "optionalParams"
+			"qualifiedName": "errString"
 		},
 		"258": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "success"
+			"qualifiedName": "errString"
 		},
 		"259": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "success"
+			"qualifiedName": "message"
 		},
 		"260": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "message"
+			"qualifiedName": "errCode"
 		},
 		"261": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "optionalParams"
+			"qualifiedName": "errCode"
 		},
 		"262": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "exit"
+			"qualifiedName": "reason"
 		},
 		"263": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "exit"
+			"qualifiedName": "log"
 		},
 		"264": {
 			"sourceFileName": "src/error_manager/main.ts",
-			"qualifiedName": "reason"
+			"qualifiedName": "log"
 		},
 		"265": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "message"
+		},
+		"266": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "optionalParams"
+		},
+		"267": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "success"
+		},
+		"268": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "success"
+		},
+		"269": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "message"
+		},
+		"270": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "optionalParams"
+		},
+		"271": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "exit"
+		},
+		"272": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "exit"
+		},
+		"273": {
+			"sourceFileName": "src/error_manager/main.ts",
+			"qualifiedName": "reason"
+		},
+		"274": {
 			"sourceFileName": "src/error_manager/types.ts",
 			"qualifiedName": "END_CODE"
 		},
-		"266": {
+		"275": {
 			"sourceFileName": "src/error_manager/types.ts",
 			"qualifiedName": "END_CODE.INVALID_TOKEN_PROVIDED"
 		},
-		"267": {
+		"276": {
 			"sourceFileName": "src/error_manager/types.ts",
 			"qualifiedName": "errors"
 		},
-		"268": {
+		"277": {
 			"sourceFileName": "src/error_manager/types.ts",
 			"qualifiedName": "EXIT_CODE"
 		},
-		"269": {
+		"278": {
 			"sourceFileName": "src/error_manager/types.ts",
 			"qualifiedName": "EXIT_CODE.SUCCESS"
 		},
-		"270": {
+		"279": {
 			"sourceFileName": "src/error_manager/types.ts",
 			"qualifiedName": "EXIT_CODE.ERROR"
 		}
