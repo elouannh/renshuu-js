@@ -14,7 +14,7 @@ async function main() {
         tsconfig: "tsconfig.json",
         entryPoints: ["src/"],
         entryPointStrategy: "Expand",
-        plugin: ["typedoc-github-theme"],
+        plugin: ["typedoc-material-theme"],
         alwaysCreateEntryPointModule: true,
         readme: "README.md",
         exclude: ["src/index.ts", "src/*/index.ts", "src/tests"],
