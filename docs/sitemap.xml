@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/index.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/modules/api.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/types/api.APIItem.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/types/api.APIItemExtended.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/variables/api.apiItems.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/variables/api.apiItemsExtended.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/interfaces/api.APIProfile.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/types/api.Item.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/types/api.ItemExtended.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/variables/api.items.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/variables/api.itemsExtended.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/interfaces/api.ItemStreakData.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/interfaces/api.JLPTAmount.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/classes/api.Profile.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/interfaces/api.ProfileAPIUsage.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/types/api.ProfileLevelProgressPercentages.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/types/api.ProfileStreaks.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/interfaces/api.ProfileStudied.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/modules/client.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/classes/client.Client.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/interfaces/client.CreateRenshuuConfig.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/modules/error_manager.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/enums/error_manager.END_CODE.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.errCode.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/variables/error_manager.errors.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.errString.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.exit.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/enums/error_manager.EXIT_CODE.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.log.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/functions/error_manager.success.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 	<url>
 		<loc>https://renshuu-js.elouannhosta.com/404.html</loc>
-		<lastmod>2024-10-06T11:46:16.880Z</lastmod>
+		<lastmod>2024-10-06T12:11:07.366Z</lastmod>
 	</url>
 </urlset>

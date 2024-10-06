@@ -7007,7 +7007,63 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# renshuu-js\nGet your Client statistics and manage your schedules with this powerful NPM package. Interact with the Client API and integrate your data anywhere."
+			"text": "<br/>\n<div align=\"center\">\n\n<h3 align=\"center\">Renshuu.js</h3>\n<p align=\"center\">\nA NPM package that allows interactions with the Renshuu application API.\n<br/>\n<br/>\n<a href=\"https://renshuu-js.elouannhosta.com\"><strong>Explore the docs »</strong></a>\n<br/>\n<br/>\n\n<a href=\"https://github.com/elouannh/renshuu-js/issues\">Report Bug .</a>\n<a href=\"https://github.com/elouannh/renshuu-js/issues\">Request Feature</a>\n</p>\n</div>\n\n## About The Project\n\nRenshuu.js provides a easy way to interact with the Renshuu API since I saw there is not any project like this yet. I'll maintain this package as often as I can, so please, if you get any suggestion or find bugs, tell me through the issue panel.\n\nThis package provides interfaces for :\n- Get the profile of the user\n### Built With\n\nThe package is built with and by the following tools:\n\n\n- [TypeScript](https://www.typescriptlang.org)\n- [Node.js](https://nodejs.org)\n- [NPM](https://www.npmjs.com/)\n- [Axios](https://www.npmjs.com/package/axios)\n## Getting Started\n\nHere's some explanations about how to use this package.\n### Prerequisites\n\nThe package requires the following versions:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```json\n{\n    \"node\": \">=20.12.2\",\n    \"npm\": \">=10.2.0\",\n    \"pnpm\": \">=9.0.6\"\n}\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n### Installation\n\n1. Get your Renshuu API key  on the app.\n2. Install the package :\n"
+		},
+		{
+			"kind": "code",
+			"text": "```sh\nnpm install renshuu-js@latest\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n3. Import the package into your project!\n## Usage\n\nBasic usage (works with TypeScript and JavaScript):\n\n- Initialize the client\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nimport * as renshuu from 'renshuu-js';\n\nconst client: renshuu.Client = new renshuu.Client({\n    renshuuApiKey: \"Your API key\",\n});\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Get the profile associated with the API key\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nconst profile: renshuu.Profile = client.getProfile();\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n_For more examples, please refer to the [Documentation](https://renshuu-js.elouannhosta.com)_\n## Roadmap\n\n- [x] Add Changelog\n- [ ] Add other routes\n\nSee the [open issues](https://github.com/elouannh/renshuu-js/issues) for a full list of proposed features (and known issues).\n## Contributing\n\nContributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.\n\nIf you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag \"enhancement\".\nDon't forget to give the project a star! Thanks again!\n\n1. Fork the Project\n2. Create your Feature Branch ("
+		},
+		{
+			"kind": "code",
+			"text": "`git checkout -b feature/AmazingFeature`"
+		},
+		{
+			"kind": "text",
+			"text": ")\n3. Commit your Changes ("
+		},
+		{
+			"kind": "code",
+			"text": "`git commit -m 'Add some AmazingFeature'`"
+		},
+		{
+			"kind": "text",
+			"text": ")\n4. Push to the Branch ("
+		},
+		{
+			"kind": "code",
+			"text": "`git push origin feature/AmazingFeature`"
+		},
+		{
+			"kind": "text",
+			"text": ")\n5. Open a Pull Request\n## License\n\nDistributed under the MIT License. See [MIT License](https://opensource.org/licenses/MIT) for more information.\n## Contact\n\nElouann H. - [@okumaneko27](https://twitter.com/okumaneko27) - ehosta@student.42lyon.fr\n\nProject Link: [https://github.com/elouannh/renshuu-js](https://github.com/elouannh/renshuu-js)"
 		}
 	],
 	"symbolIdMap": {
