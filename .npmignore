@@ -1,7 +1,8 @@
+docs/
 node_modules/
 scripts/
 src/
-dist/tests/
+.env
 .gitignore
 .npmignore
 .prettierrc
